@@ -3,8 +3,8 @@ services:
   mysql:
     image: mysql:5.7
     volumes:
-      - ./mysql/:/etc/mysql/conf.d/
-      - ./db_data:/var/lib/mysql
+      - ./data/mysql_conf/:/etc/mysql/conf.d/
+      - ./data/mysql_data:/var/lib/mysql
     restart: always
     ports:
       - "3308:3306"
